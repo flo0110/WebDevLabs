@@ -86,7 +86,7 @@ function greetingFunc() {
     }
   }
   
-
 document.addEventListener("DOMContentLoaded", function() {
-    greetingFunc();
+  console.log("Current URL:", window.location.href);
+  greetingFunc();
 });
