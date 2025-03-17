@@ -86,8 +86,5 @@ function greetingFunc() {
     }
   }
   
-  if (window.location.href.indexOf("index.html") !== -1 || 
-      window.location.pathname === "/" ||
-      window.location.pathname === "/index.html") 
-      {
-        greetingFunc();}
+
+greetingFunc();
