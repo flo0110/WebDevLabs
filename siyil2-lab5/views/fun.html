@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Florence Liu">
+  <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+  <meta name="description" content="Florence Liu professional website">
+  <title>Florence Liu - Fun</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <header>
+    <h1 id="webname">Florence Liu</h1>
+    <nav>
+      <a href="../index.html" class="nav-link">About</a>
+      <a href="cv.html" class="nav-link">Resume</a>
+      <a href="fun.html" class="nav-link">Play</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+  <!-- Use mainLayout to allow flexbox styling -->
+  <div class="mainLayout">
+    <!-- item1: List of Activities -->
+    <div class="item1">
+      <h2>Things I Love to Do for Fun</h2>
+      <ul id="favoriteThings">
+        <li>Music: R&B, Pop, Rap</li>
+        <li>Movies: Dune, Inception</li>
+        <li>Sports: Softball, Hiking, Badminton</li>
+        <li>Food: Japanese, Thai</li>
+      </ul>
+      <!-- <button id="showBtn" onclick="showList()">Click to see...</button> -->
+    </div>
+    <!-- item2: Fun Image -->
+    <div class="item2">
+      <h2>Fun Image</h2>
+      <img src="../static/fun.jpg" alt="Fun Image" class="funIMG">
+    </div>
+    <!-- item3: YouTube Video Embed -->
+    <div class="item3">
+      <h2>My Favorite YouTube Video</h2>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/0FVdhxuLCBc" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <!-- item4: Random Advice Section -->
+    <div class="item4">
+      <div class="container">
+        <h2>Need Some Advice?</h2>
+        <p id="adviceText">Click the button to get a random piece of advice!</p>
+        <button onclick="getAdvice()">Get Advice</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      designed 🎨 and coded 👩🏻‍💻 by Florence Liu<span id="copyYear"></span>
+    </p>
+  </footer>
+</body>
+</html>
